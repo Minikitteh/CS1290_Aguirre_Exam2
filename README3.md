@@ -18,4 +18,4 @@ return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] i
 
 
 # Process
-For this problem, I thought it would be simple to implement, because it is quick to trace and to test it.
+For this problem, I thought it would be simple to implement, because it is quick to trace and to test it, unforunately due to time constraints, I looked it up on leetcode, so I could understand it's implementation quickly. The code was slightly modified from leetcode, but remains the same. The way the code works, is that we use brute force to determine the arithmic slices. It increments the counter for everytimea slice is found. It does this by getting a number in front of its current stadpoint then gets that number then subtracts the current number from it to get the difference between them, then looks though the array if the difference between the previous number and the current number is equal to the previously calculated difference, and if so adds it to the amount of possible slices, then re-calculates the next difference.
