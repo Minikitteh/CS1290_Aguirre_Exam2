@@ -23,9 +23,7 @@ Note:
 # Process
 I actually had a hard time tackling the problem, eventually I ended up looking up the answer on Leetcode. The way I approached this problem was by figuring out, the first move is always the first winning move, so you need to always get the max from the whole pile of stones, and keep getting the current max when it is your turn. 
 
-From looking at seveal solutions on this problem about dynamic programming, you can store sub solutions to the problem in another array to keep the recursion aspect to the problem. The following is the aspect of dynamic programming formula to this problem.
-
-dp[i][j] = Math.max(dp[i][j], sum[i] - dp[i + k][Math.max(j, k)]);
+Hence in this case, since Alex always goes first and gets the max, he will always win, so just return true is the answer for this problem.
 
 
 
