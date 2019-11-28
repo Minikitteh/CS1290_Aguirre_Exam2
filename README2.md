@@ -27,4 +27,4 @@ This is the recursive process for the dynamic aspect of this problem:
 
 path = Math.min(path, A[i+1][j+1]) & path = Math.min(path, A[i+1][j-1])
 
-This is to get the minimum path from your columns, when you first start off at i = 0, you are starting out at your first row, from there you check the next row for which path will give you a smaller sum, by getting the minimum
+This is to get the minimum path from your columns, when you first start off at i = 0, you are starting out at your first row, from there you check the next row for which path will give you a smaller sum, by getting the minimum and so on, until you have set the minimum path, then we return it.
