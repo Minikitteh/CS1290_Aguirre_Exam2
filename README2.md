@@ -17,5 +17,14 @@ The falling path with the smallest sum is [1,4,7], so the answer is 12.
 
 
 # Process
+The way I visualized the problem, was by actually vissuallizing the graph as a square
+[1,2,3]  ↓  Once i did the i was able to properly think what the problem was asking effectively. Now my main problem was how
+[4,5,6]  ↓  to implement it. I struggled of thinking of a way, and due to time constraints, I looked up the explanation on leetcode
+[7,8,9]  ↓
 
 
+This is the recursive process for the dynamic aspect of this problem:
+
+path = Math.min(path, A[i+1][j+1]) & path = Math.min(path, A[i+1][j-1])
+
+This is to get the minimum path from your columns, when you first start off at i = 0, you are starting out at your first row, from there you check the next row for which path will give you a smaller sum, by getting the minimum
