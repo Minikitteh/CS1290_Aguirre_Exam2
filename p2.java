@@ -1,7 +1,7 @@
 
 public class p2 {
 	
-	//PROBLEM 2
+	//PROBLEM 2 From Leetcode
 	public int minFallingPathSum(int[][] A) {
         for (int i = A.length-2; i >= 0; i--) {
             for (int j = 0; j < A.length; j++) {
@@ -13,8 +13,7 @@ public class p2 {
                 A[i][j] += path;
             }
         }
-
-        int ans = 0;
+        int ans = Integer.MAX_VALUE;
         for (int x: A[0])
             ans = Math.min(ans, x);
         return ans;
